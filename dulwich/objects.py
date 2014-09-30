@@ -1063,7 +1063,7 @@ def parse_commit(chunks):
         else:
             extra.append((field, value))
     return (tree, parents, author_info, commit_info, encoding, mergetag,
-            message, extra)
+            message, tuple(extra))
 
 
 class Commit(ShaFile):
@@ -1083,7 +1083,7 @@ class Commit(ShaFile):
         self._parents = []
         self._encoding = None
         self._mergetag = []
-        self._extra = []
+        self._extra = ()
         self._author_timezone_neg_utc = False
         self._commit_timezone_neg_utc = False
 

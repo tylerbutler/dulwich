@@ -482,7 +482,7 @@ class CommitParseTests(ShaFileCheckTests):
     def test_custom(self):
         c = Commit.from_string(self.make_commit_text(
           extra={'extra-field': 'data'}))
-        self.assertEqual([('extra-field', 'data')], c.extra)
+        self.assertEqual((('extra-field', 'data'),), c.extra)
 
     def test_encoding(self):
         c = Commit.from_string(self.make_commit_text(encoding='UTF-8'))

@@ -34,6 +34,9 @@
     dulwich.porcelain.list_tags has been renamed to tag_list.
     (Jelmer Vernooij)
 
+  * In addition to being get-only, the 'extra' property of Commit is now a
+    tuple, to discourage modification. (Jelmer Vernooij)
+
 0.9.7	2014-06-08
 
  BUG FIXES
