@@ -1,3 +1,6 @@
+**Note:** This is a fork of the main Dulwich project. The *only* changes are
+to enable publishing a binary Windows Wheel on PyPI.
+
 This is the Dulwich project.
 
 [![Build Status](https://travis-ci.org/jelmer/dulwich.png?branch=master)](https://travis-ci.org/jelmer/dulwich)

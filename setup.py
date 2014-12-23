@@ -57,7 +57,7 @@ else:
 if sys.version_info < (2, 7):
     tests_require.append('unittest2')
 
-setup(name='dulwich',
+setup(name='dulwich-windows',
       description='Python Git Library',
       keywords='git',
       version=dulwich_version_string,
